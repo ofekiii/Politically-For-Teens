@@ -20,6 +20,9 @@ namespace PoliticallyForTeens
         TextView TwHello;
         TextView TwDate;
         Button btnToday;
+
+        private MenuFunctions menuFunctions;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,6 +36,22 @@ namespace PoliticallyForTeens
             TwHello.Text = "Hello " + userName;
             TwDate.Text = System.DateTime.Now.ToString();
             // Create your application here
+
+
+            menuFunctions = new MenuFunctions(this);
+
+
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
+        }
+
     }
 }

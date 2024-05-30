@@ -72,7 +72,6 @@ namespace PoliticallyForTeens
             try
             {
                 dbCommand = new SQLiteConnection(Path());
-
             }
 
             catch (Exception ex)
@@ -84,8 +83,6 @@ namespace PoliticallyForTeens
 
                 dbCommand.CreateTable<Users>();
                 dbCommand.CreateTable<Comments>();
-                dbCommand.CreateTable<CreateComments>();
-                dbCommand.CreateTable<CreateThreads>();
                 dbCommand.CreateTable<Threads>();
             }
 

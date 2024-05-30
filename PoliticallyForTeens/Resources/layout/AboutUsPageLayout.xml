@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:gravity="center_horizontal"
+    android:background="#66b2b2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="50dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"/>
+
+    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="אנחנו מייסדי פולי טיין תלמדי בית הספר עירוני א ובנינו אפליקציה זו על מנת לתקן ולו קצת את השסע הפוליטי שנוצר בעם כדי שלא נגרר למלחמת אחים ונשמור על המדינה שלנו"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"/>
+
+</LinearLayout>
