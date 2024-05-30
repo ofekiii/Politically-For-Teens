@@ -11,13 +11,13 @@ using System.Text;
 
 namespace PoliticallyForTeens
 {
-    [Activity(Label = "Au")]
-    public class Au : Activity
+    [Activity(Label = "RightLeftInfoPageActivity")]
+    public class RightLeftInfoPageActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Au);
+            SetContentView(Resource.Layout.RightLeftInfoPageLayout);
 
             // Create your application here
         }

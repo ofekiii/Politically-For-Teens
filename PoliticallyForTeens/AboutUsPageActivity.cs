@@ -11,13 +11,13 @@ using System.Text;
 
 namespace PoliticallyForTeens
 {
-    [Activity(Label = "RaL")]
-    public class RaL : Activity
+    [Activity(Label = "Au")]
+    public class AboutUsPageActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.RaL);
+            SetContentView(Resource.Layout.AboutUsPageLayout);
 
             // Create your application here
         }

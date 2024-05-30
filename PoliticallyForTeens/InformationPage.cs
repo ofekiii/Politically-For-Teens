@@ -35,19 +35,19 @@ namespace PoliticallyForTeens
 
         private void Au_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(LoginActivity));
+            Intent intent = new Intent(this, typeof(AboutUsPageActivity));
             StartActivity(intent);
         }
 
         private void RaL_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(LoginActivity));
+            Intent intent = new Intent(this, typeof(RightLeftInfoPageActivity));
             StartActivity(intent);
         }
 
         private void Parties_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(LoginActivity));
+            Intent intent = new Intent(this, typeof(PartiesInformationPageActivity));
             StartActivity(intent);
         }
     }

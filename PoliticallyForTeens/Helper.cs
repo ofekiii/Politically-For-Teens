@@ -84,8 +84,6 @@ namespace PoliticallyForTeens
 
                 dbCommand.CreateTable<Users>();
                 dbCommand.CreateTable<Comments>();
-                dbCommand.CreateTable<CreateComments>();
-                dbCommand.CreateTable<CreateThreads>();
                 dbCommand.CreateTable<Threads>();
             }
 
