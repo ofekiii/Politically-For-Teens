@@ -7,61 +7,70 @@
     android:background="#66b2b2">
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sign in"
+        android:text="Login"
         android:textSize="50dp"
-        android:layout_marginLeft="75dp"
         android:textStyle="bold"/>
     
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="email"
+        android:hint="Email"
         android:textSize="20dp"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        android:id="@+id/email_ET"/>
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="password"
+        android:hint="Password"
         android:textSize="20dp"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        android:id="@+id/password_ET"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="remember me"/>
+        android:orientation="vertical"
+        android:layout_marginLeft="43dp"
+        android:gravity="left">
         
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/rememberMeCk"
-            
-            />
+            android:text="Remember Me"
+            android:id="@+id/rmbrmeCB"/>
 
-
-         </LinearLayout>
-            <Button
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="forgot password"
-               android:textAllCaps="false"
-        android:id="@+id/btnforgotPassword"
-            />
+            android:text="Show Password"
+            android:id="@+id/showPasswordCheckBox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fgpwTV"/>
+
+    </LinearLayout>
+
+
+            
         
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:text="sign in"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+       android:text="Confirm"
         android:textAllCaps="false"
-        android:layout_marginTop="25dp"
-        android:id="@+id/btnSignIn"/>
+        android:layout_marginTop="105dp"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:id="@+id/LoginBTN"/>
 
        <LinearLayout
         android:layout_width="wrap_content"
@@ -72,17 +81,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="have no account?"
-            android:layout_marginTop="25dp"/>
-
-        <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sign up"
-        android:textAllCaps="false"
-        android:layout_marginTop="25dp"
-        android:id="@+id/SingUpPage"/>
-
+            android:text="Don't Have an Account?"
+            android:layout_marginTop="25dp"
+            android:id="@+id/Register_TV"/>
 
          </LinearLayout>
 </LinearLayout>
