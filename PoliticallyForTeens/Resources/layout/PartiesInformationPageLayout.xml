@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#66b2b2">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parties"
+            android:textSize="50dp"
+            android:layout_marginLeft="75dp"
+            android:textStyle="bold"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="הליכוד"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מייסד: מנחם בגין (כתנועה פוליטית ב-1973, מפלגת חירות מוקדם יותר)
+אידאולוגיה: ימין לאומי
+עמדות מרכזיות:
+ביטחון: מדיניות ביטחונית תקיפה, שמירה על התנחלויות.
+כלכלה: תמיכה בשוק חופשי, הפרטה וצמצום התערבות ממשלתית.
+מדינה: חיזוק הזהות היהודית של המדינה, עמדות מסורתיות-לאומיות.
+מנהיג נוכחי: בנימין נתניהו
+"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="יש עתיד"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מייסד: יאיר לפיד (2012)
+אידאולוגיה: מרכז-שמאל
+עמדות מרכזיות:
+ביטחון: תמיכה בפתרון שתי מדינות לסכסוך הישראלי-פלסטיני.
+כלכלה: מדיניות סוציאל-דמוקרטית, השקעה בחינוך ובבריאות.
+מדינה: דגש על דמוקרטיה ושוויון זכויות, עמדות ליברליות.
+מנהיג נוכחי: יאיר לפיד
+"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="כחול לבן"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מייסד: בני גנץ (2022, כאיחוד בין מפלגת כחול לבן ומפלגות אחרות)
+אידאולוגיה: מרכז-שמאל
+עמדות מרכזיות:
+ביטחון: מדיניות ביטחונית פרגמטית, תמיכה במומ לשלום, שמירה על כוח צבאי חזק.
+כלכלה: מדיניות מאוזנת בין ניאו-ליברליזם לסוציאל-דמוקרטיה, תמיכה בשוק חופשי עם דגש על רווחה חברתית.
+מדינה: חיזוק ערכי דמוקרטיה ושוויון, תמיכה במוסדות המדינה, קידום לכידות חברתית.
+מנהיג נוכחי: בני גנץ
+"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="הציונות הדתית"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מייסד: איחוד של מספר מפלגות דתיות לאומיות (2021)
+אידאולוגיה: ימין דתי לאומי
+עמדות מרכזיות:
+ביטחון: עמדות ביטחוניות תקיפות, תמיכה בהתנחלויות ובשלמות הארץ.
+כלכלה: תמיכה בשוק חופשי עם דגש על ערכים חברתיים.
+מדינה: חיזוק הזהות היהודית של המדינה, מדיניות חברתית-דתית.
+מנהיג נוכחי: בצלאל סמוטריץ'
+"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
