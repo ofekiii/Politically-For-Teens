@@ -62,9 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comments.cs" />
+    <Compile Include="CommentSendActivity.cs" />
     <Compile Include="CreateComments.cs" />
     <Compile Include="CreateThreads.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="HomePageActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,7 +102,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CommentSendLayout.xml" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.8.116</Version>
@@ -131,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\RoundButton.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\HomePageLayout.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

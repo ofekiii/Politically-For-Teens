@@ -34,6 +34,8 @@ namespace PoliticallyForTeens
             showPasswordCheckBox = FindViewById<CheckBox>(Resource.Id.showPasswordCheckBox);
             LoginBTN = FindViewById<Button>(Resource.Id.LoginBTN);
             fgpwConfirmBtn = FindViewById<Button>(Resource.Id.fgpwConfirmBtn);
+            fgpwTV = FindViewById<TextView>(Resource.Id.fgpwTV);
+            Register_TV = FindViewById<TextView>(Resource.Id.Register_TV);
 
 
 
@@ -45,6 +47,13 @@ namespace PoliticallyForTeens
 
             showPasswordCheckBox.CheckedChange += ShowPasswordCheckBox_CheckedChange;
             fgpwTV.Click += FgpwTV_Click;
+            Register_TV.Click += Register_TV_Click;
+        }
+
+        private void Register_TV_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(RegistrationActivity));
+            StartActivity(intent);
         }
 
         private void FgpwTV_Click(object sender, System.EventArgs e)
@@ -84,8 +93,8 @@ namespace PoliticallyForTeens
                     editor.PutBoolean("rmbrmeCB", rmbrmeCB.Checked);
                     editor.Commit();
 
-                    //Intent intent = new Intent(this, typeof(HomePageActivity));
-                    //StartActivity(intent);
+                    Intent intent = new Intent(this, typeof(HomePageActivity));
+                    StartActivity(intent);
                 }
                 else
                 {

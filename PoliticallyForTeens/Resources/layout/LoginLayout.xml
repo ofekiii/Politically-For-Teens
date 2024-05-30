@@ -68,6 +68,7 @@
         android:textAllCaps="false"
         android:layout_marginTop="105dp"
         android:textSize="24dp"
+        android:background="@drawable/roundbutton"
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/holo_blue_light"
         android:id="@+id/LoginBTN"/>
