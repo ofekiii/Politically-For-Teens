@@ -22,6 +22,8 @@ namespace PoliticallyForTeens
         Dialog dialog;
         SQLiteConnection dbCommand;
 
+        private MenuFunctions menuFunctions;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -41,7 +43,7 @@ namespace PoliticallyForTeens
 
 
 
-
+            menuFunctions = new MenuFunctions(this);
 
             dbCommand = new SQLiteConnection(Helper.Path());
 
@@ -135,5 +137,16 @@ namespace PoliticallyForTeens
                 Toast.MakeText(this, "User Not Found", ToastLength.Long).Show();
             }
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
+        }
+
     }
 }
