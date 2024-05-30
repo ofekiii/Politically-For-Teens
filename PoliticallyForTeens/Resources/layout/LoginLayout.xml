@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#66b2b2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign in"
+        android:textSize="50dp"
+        android:layout_marginLeft="75dp"
+        android:textStyle="bold"/>
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remember me"/>
+        
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rememberMeCk"
+            
+            />
+
+
+         </LinearLayout>
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password"
+               android:textAllCaps="false"
+        android:id="@+id/btnforgotPassword"
+            />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="sign in"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnSignIn"/>
+
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="have no account?"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:id="@+id/SingUpPage"/>
+
+
+         </LinearLayout>
+</LinearLayout>
