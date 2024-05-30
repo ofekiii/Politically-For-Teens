@@ -22,7 +22,7 @@ namespace PoliticallyForTeens
         private static ISharedPreferences sp;
         private static ISharedPreferences spTrainer;
         private static string path;
-        private static string dbName = "dbRegister4";
+        private static string dbName = "DBPolitic";
 
         public Helper()
         {
@@ -72,6 +72,7 @@ namespace PoliticallyForTeens
             try
             {
                 dbCommand = new SQLiteConnection(Path());
+
             }
 
             catch (Exception ex)
@@ -81,7 +82,11 @@ namespace PoliticallyForTeens
             try
             {
 
-                dbCommand.CreateTable<Users>(); 
+                dbCommand.CreateTable<Users>();
+                dbCommand.CreateTable<Comments>();
+                dbCommand.CreateTable<CreateComments>();
+                dbCommand.CreateTable<CreateThreads>();
+                dbCommand.CreateTable<Threads>();
             }
 
             catch (Exception ex)
@@ -90,10 +95,10 @@ namespace PoliticallyForTeens
             }
 
 
-            byte[] imageArray = File.ReadAllBytes(Resource.Drawable.managerpicture.ToString());
-            Bitmap bitmap = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
+            //byte[] imageArray = File.ReadAllBytes(Resource.Drawable.picture.ToString());
+            //Bitmap bitmap = BitmapFactory.DecodeByteArray(imageArray, 0, imageArray.Length);
 
-            string stringManagerPicture = BitmapToBase64(bitmap);
+            //string stringManagerPicture = BitmapToBase64(bitmap);
 
             return true;
 

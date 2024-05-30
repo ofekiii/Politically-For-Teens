@@ -13,10 +13,9 @@ using SQLite;
 
 namespace PoliticallyForTeens
 {
-    class Users
-    {
-          [Table("Users")]
-        class Clients
+
+        [Table("Users")]
+         public  class Users
         {
             [PrimaryKey, Column("email")]
             public string email { get; set; }
@@ -38,11 +37,11 @@ namespace PoliticallyForTeens
             public string picture { get; set; }
 
 
-            public Clients()
+            public Users()
             {
             }
 
-            public Clients(string email, string fName, string lName, string password, string picture, string age, int gender)
+            public Users(string email, string fName, string lName, string password, string picture, string age, int gender)
             {
                 this.email = email;
                 this.fName = fName;
@@ -53,5 +52,6 @@ namespace PoliticallyForTeens
                 this.gender = gender;
             }
 
-        }
+        
     }
+}
