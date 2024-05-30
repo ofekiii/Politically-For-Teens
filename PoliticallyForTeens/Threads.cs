@@ -38,9 +38,8 @@ namespace PoliticallyForTeens
         {
         }
 
-        public Threads(int id, string description, string userEmail, string dateP, int commentsCount)
+        public Threads(string description, string userEmail, string dateP, int commentsCount)
         {
-            this.id = id;
             this.description = description;
             this.userEmail = userEmail;
             this.dateP = dateP;
