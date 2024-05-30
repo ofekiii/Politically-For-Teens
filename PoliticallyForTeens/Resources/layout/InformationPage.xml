@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66b2b2"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textSize="50dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parties"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:textSize="40dp"
+        android:id="@+id/btnP"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right and Left"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:textSize="40dp"
+        android:id="@+id/btnRL"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:textSize="40dp"
+        android:id="@+id/btnAu"/>
+
+</LinearLayout>

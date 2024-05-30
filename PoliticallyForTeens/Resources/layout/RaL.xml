@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#66b2b2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right and Left"
+        android:textSize="50sp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+     
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סיכום"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ההבדלים בין ימין לשמאל בישראל מתבטאים בגישות שונות בנושאי כלכלה, ביטחון ומדינה. בעוד שהימין מקדם כלכלה ניאו-ליברלית ומדיניות ביטחונית תקיפה, השמאל דוגל בכלכלה סוציאל-דמוקרטית וביוזמות שלום. בנוגע לאופי המדינה, הימין שואף לחיזוק הזהות היהודית, ואילו השמאל מדגיש את ערכי הדמוקרטיה והשוויון. ההבנה של גישות אלו מסייעת להבין את המחלוקות והשסעים הפוליטיים בחברה הישראלית."
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="כלכלה"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ימין"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מדיניות כלכלית ניאו-ליברלית: תמיכה בשוק חופשי, הפחתת מיסים והקטנת התערבות הממשלה בכלכלה. הפרטה: קידום הפרטת חברות ממשלתיות ושירותים ציבוריים. הקטנת תקציב הרווחה: צמצום התקציבים לרווחה חברתית, קידום עידוד יזמות ועסקים פרטיים."
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="שמאל"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מדיניות כלכלית סוציאל-דמוקרטית: תמיכה במדינת רווחה, הגברת מיסוי פרוגרסיבי והשקעה בשירותים ציבוריים. הגברת תכניות רווחה: הרחבת תוכניות רווחה, חינוך ובריאות ציבורית. התערבות ממשלתית: תמיכה בתפקיד פעיל של הממשלה בכלכלה למען צמצום פערים חברתיים וכלכליים."
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ביטחון"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ימין"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מדיניות ביטחונית תקיפה: תמיכה בשימוש בכוח צבאי חזק ושמירה על עמדה תקיפה בסכסוך הישראלי-פלסטיני. התנחלויות: תמיכה בהרחבת התנחלויות ביהודה ושומרון ובשמירה על שטחים אלה. ספקנות כלפי הסכמי שלום: נטייה לחשדנות כלפי יוזמות שלום שמחייבות ויתור על שטחים או סמכויות ביטחוניות."
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="שמאל"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="יוזמות שלום: תמיכה במומ ובהסכמי שלום עם הפלסטינים ועם מדינות ערביות אחרות. נסיגות משטחים: מוכנות לנסיגות משטחים מסוימים במסגרת הסכמי שלום. פתרון שתי מדינות: תמיכה בפתרון שתי מדינות לשני עמים כפתרון לסכסוך הישראלי-פלסטיני."
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="מדינה"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+           
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ימין"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="זהות יהודית של המדינה: דגש על חיזוק הזהות היהודית של המדינה, כולל חקיקה שמדגישה את אופיה היהודי.
+מדיניות הגירה והאזרחות: מדיניות מחמירה יותר לגבי הגירה וקבלת אזרחות, תוך דגש על שמירה על רוב יהודי.
+מערכת משפט: נטייה לביקורת על מערכת המשפט ובמיוחד על בית המשפט העליון, ותמיכה בצמצום סמכויותיו."
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="שמאל"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="דמוקרטיה ושוויון זכויות: דגש על ערכי דמוקרטיה, זכויות אדם ושוויון זכויות לכלל אזרחי המדינה.
+מערכת משפט עצמאית: תמיכה במערכת משפט עצמאית וחזקה שתגן על זכויות המיעוטים.
+פלורליזם תרבותי: קידום פלורליזם תרבותי והכרה בזכויות הקהילות השונות בישראל.
+"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+                
+                
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
