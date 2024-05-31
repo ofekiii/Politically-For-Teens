@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">PoliticallyForTeens</string>
     <string name="action_settings">Settings</string>
+	
+	<string name="menuHomePage">Home Page</string>
+	<string name="menuForumPage">Forum Page</string>
+	<string name="menuInformationPage">Information Page</string>
+	<string name="menuProfile">Profile</string>
+	<string name="menuLogout">Logout</string>
+	
+	
+	
 </resources>
