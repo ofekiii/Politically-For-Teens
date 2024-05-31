@@ -20,10 +20,10 @@ namespace PoliticallyForTeens
 
         SQLiteConnection dbCommand;
 
-        public ThreadsAdapter(Android.Content.Context context, System.Collections.Generic.List<Threads> sessionList)
+        public ThreadsAdapter(Android.Content.Context context, System.Collections.Generic.List<Threads> threadList)
         {
             this.context = context;
-            this.threadsList = sessionList;
+            this.threadsList = threadList;
         }
 
         public List<Threads> GetList()

@@ -39,9 +39,8 @@ namespace PoliticallyForTeens
 
             }
 
-            public Comments(int id, string description, string userEmail, string dateP, bool pro)
+            public Comments(string description, string userEmail, string dateP, bool pro)
             {
-                this.id = id;
                 this.description = description;
                 this.userEmail = userEmail;
                 this.dateP = dateP;

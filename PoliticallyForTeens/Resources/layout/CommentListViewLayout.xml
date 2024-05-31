@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:background="@drawable/roundbutton"
+            android:elevation="1dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:text="OP Name"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:elevation="2dp"
+            android:id="@+id/commenterName_TV"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/thumbsupblue"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:elevation="2dp"
+            android:visibility="visible"
+            android:id="@+id/thumbsUpImage"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/thumbsdownred"
+            android:layout_gravity="left"
+            android:gravity="center_horizontal"
+            android:elevation="2dp"
+            android:visibility="invisible"
+            android:id="@+id/thumbsDownImage"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+     
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="21/2/2024 11:11 PM"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:elevation="2dp"
+            android:id="@+id/commentDate_TV"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="75dp"
+            android:text="Comment Text"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:elevation="2dp"
+            android:id="@+id/commentDescription"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="40dp"
+            android:text="Comment ID: ####"
+            android:textSize="10dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:elevation="2dp"
+            android:id="@+id/commentId_TV"/>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

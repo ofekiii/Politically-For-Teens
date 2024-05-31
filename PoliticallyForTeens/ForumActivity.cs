@@ -19,13 +19,18 @@ namespace PoliticallyForTeens
         public static List<Threads> threadsList { get; set; }
         ThreadsAdapter threadsAdapter;
         ListView lv;
+        private MenuFunctions menuFunctions;
+        SQLiteConnection dbCommand;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             threadsList = new List<Threads>();
 
-            SQLiteConnection dbCommand = new SQLiteConnection(Helper.Path());
+
+            menuFunctions = new MenuFunctions(this);
+
+            dbCommand = new SQLiteConnection(Helper.Path());
 
             lv.OnItemClickListener = this;
             try
@@ -47,11 +52,21 @@ namespace PoliticallyForTeens
 
             Threads thread1 = threadsList[position];
 
-            intent.PutExtra("id", thread1.id.ToString());
+            intent.PutExtra("threadId", thread1.id.ToString());
             StartActivity(intent);
 
 
 
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
         }
 
     }

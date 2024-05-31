@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="AboutUsPageActivity.cs" />
     <Compile Include="Comments.cs" />
+    <Compile Include="CommentsAdapter.cs" />
     <Compile Include="CommentSendActivity.cs" />
     <Compile Include="ForumActivity.cs" />
     <Compile Include="Helper.cs" />
@@ -182,9 +183,6 @@
     <AndroidResource Include="Resources\xml\file_paths.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\mainMenu.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\ForumLayout.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +193,19 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\threadListViewLayout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CommentListViewLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ThreadLayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\mainMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

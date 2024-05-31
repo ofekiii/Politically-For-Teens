@@ -14,12 +14,29 @@ namespace PoliticallyForTeens
     [Activity(Label = "PartiesInformationPageActivity")]
     public class PartiesInformationPageActivity : Activity
     {
+
+        private MenuFunctions menuFunctions;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.PartiesInformationPageLayout);
 
             // Create your application here
+
+            menuFunctions = new MenuFunctions(this);
+
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
+        }
+
     }
 }

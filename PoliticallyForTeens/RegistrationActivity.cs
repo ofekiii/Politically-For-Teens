@@ -34,6 +34,8 @@ namespace PoliticallyForTeens
         TextView warnEmail;
         SQLiteConnection dbCommand;
 
+        private MenuFunctions menuFunctions;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -57,6 +59,8 @@ namespace PoliticallyForTeens
             warnMPassword = FindViewById<TextView>(Resource.Id.warnMPassword);
             warnEmail = FindViewById<TextView>(Resource.Id.warnEmail);
             btnRegister.Click += BtnRegister_Click;
+
+            menuFunctions = new MenuFunctions(this);
 
             dbCommand = new SQLiteConnection(Helper.Path());
         }
@@ -163,5 +167,16 @@ namespace PoliticallyForTeens
                 Toast.MakeText(this, "Validation Error", ToastLength.Long).Show();
             }
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
+        }
+
     }
 }

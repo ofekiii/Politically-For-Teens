@@ -17,6 +17,9 @@ namespace PoliticallyForTeens
         Button Parties;
         Button RaL;
         Button Au;
+
+        private MenuFunctions menuFunctions;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +34,9 @@ namespace PoliticallyForTeens
             Au.Click += Au_Click;
 
             // Create your application here
+
+            menuFunctions = new MenuFunctions(this);
+
         }
 
         private void Au_Click(object sender, EventArgs e)
@@ -50,5 +56,16 @@ namespace PoliticallyForTeens
             Intent intent = new Intent(this, typeof(PartiesInformationPageActivity));
             StartActivity(intent);
         }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return menuFunctions.OnOptionsItemSelected(item);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            return menuFunctions.OnCreateOptionsMenu(menu);
+        }
+
     }
 }
